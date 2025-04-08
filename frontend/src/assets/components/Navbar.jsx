@@ -6,12 +6,8 @@ export const Navbar = () => {
                 <img src="/images/logo.png" alt="" className="w-full h-full"/>
             </div>
             <div>
-                <button className="text-white font-sans text-xl font-thin" onClick={LogData()}>Signup</button>
+                <button className="text-white font-sans text-xl font-thin">Signup</button>
             </div>
         </div>
     </>
-}
-
-function LogData(){
-    console.log("CLicked")
 }

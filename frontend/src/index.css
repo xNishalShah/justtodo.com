@@ -1,9 +1,25 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Manrope', sans-serif;
-  src: url();
+  font-family: "montesserat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf");
 }
+
+@font-face {
+  font-family: "bella";
+  src: url("/fonts/Bella-yw64Z.ttf");
+}
+
+@layer utilities {
+  .font-montesserat {
+      font-family: "Montesserat", sans-serif;
+  }
+
+  .font-bella {
+      font-family: "Bella", sans-serif;
+  }
+}
+
 /* @layer utilities {
   .animate-gradient {
     background-size: 200% 200%;
@@ -24,5 +40,5 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: #120e0e;
 }
