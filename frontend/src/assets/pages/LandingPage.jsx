@@ -16,69 +16,69 @@ export const LandingPage = () => {
     const page3 = useRef()
     const page3ContL = useRef()
     const page3ContR = useRef()
-    // useGSAP(() => {
-    //     const tl = gsap.timeline()
-    //     tl.from(page.current, {
-    //         opacity: 0,
-    //         scale: 0.9999,
-    //         duration: 3,
-    //     });
-    //     tl.from(nav.current, {
-    //         opacity: 0,
-    //         scale: 0.9999,
-    //         duration: 1,
-    //     });
-    //     tl.from(container.current, {
-    //         opacity: 0,
-    //         scale: 0.9999,
-    //         duration: 2,
-    //     });
-    //     gsap.from(page2ContL.current,{
-    //         x: -500,
-    //         opacity:0,
-    //         duration: 1,
-    //         scrollTrigger:{
-    //             trigger: page2.current,
-    //             start: "top 120%",
-    //             end: "top -5%", 
-    //             scrub: true
-    //         }
-    //     })
-    //     gsap.from(page2ContR.current,{
-    //         x: 500,
-    //         opacity:0,
-    //         duration: 1,
-    //         scrollTrigger:{
-    //             trigger: page2.current,
-    //             start: "top 200%",
-    //             end: "top -25%", 
-    //             scrub: true
-    //         }
-    //     })
-    //     gsap.from(page3ContL.current,{
-    //         y: -100,
-    //         x: -300,
-    //         duration: 1,
-    //         opacity:0,
-    //         scrollTrigger:{
-    //             trigger: page3.current,
-    //             start: "top 80%",
-    //             end: "top -25%", 
-    //             scrub: true
-    //         }
-    //     })
-    //     gsap.from(page3ContR.current,{
-    //         y: 500,
-    //         opacity: 0,
-    //         duration: 1,
-    //         scrollTrigger:{
-    //             trigger: page3.current,
-    //             start: "top 80%",
-    //             end: "top -5%", 
-    //             scrub: true
-    //         }
-    //     })
-    // }, []);
+    useGSAP(() => {
+        const tl = gsap.timeline()
+        tl.from(page.current, {
+            opacity: 0,
+            scale: 0.9999,
+            duration: 3,
+        });
+        tl.from(nav.current, {
+            opacity: 0,
+            scale: 0.9999,
+            duration: 1,
+        });
+        tl.from(container.current, {
+            opacity: 0,
+            scale: 0.9999,
+            duration: 2,
+        });
+        gsap.from(page2ContL.current,{
+            x: -500,
+            opacity:0,
+            duration: 1,
+            scrollTrigger:{
+                trigger: page2.current,
+                start: "top 120%",
+                end: "top -5%", 
+                scrub: true
+            }
+        })
+        gsap.from(page2ContR.current,{
+            x: 500,
+            opacity:0,
+            duration: 1,
+            scrollTrigger:{
+                trigger: page2.current,
+                start: "top 200%",
+                end: "top -25%", 
+                scrub: true
+            }
+        })
+        gsap.from(page3ContL.current,{
+            y: -100,
+            x: -300,
+            duration: 1,
+            opacity:0,
+            scrollTrigger:{
+                trigger: page3.current,
+                start: "top 80%",
+                end: "top -25%", 
+                scrub: true
+            }
+        })
+        gsap.from(page3ContR.current,{
+            y: 500,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger:{
+                trigger: page3.current,
+                start: "top 80%",
+                end: "top -5%", 
+                scrub: true
+            }
+        })
+    }, []);
     return <>
         <div ref={nav} className="h-[16vw] md:h-[13%] w-[98vw] md:w-full flex justify-center align-bottom z-[999] fixed">
             <Navbar />
@@ -94,7 +94,7 @@ export const LandingPage = () => {
                         <p className="text-gray-200 px-[30px] md:px-[50px] md:mt-[12px] font-sans text-[1.6vmax] text-center font-light drop-shadow-[0_0_4px_rgba(255,255,255,0.6)]">
                             Say goodbye to boring to-do lists and hello to justtodo.com – your ultimate weapon against procrastination. Why shuffle tasks when you can slay goals with style? At justtodo, we don’t just help you “stay organized” – we launch you into beast mode with goal-based to-do templates and an AI-powered routine builder that actually gets you moving. Whether you're chasing dreams or just trying to crush your daily grind, we've got your back. Join a tribe of like-minded go-getters, fuel your focus, and build habits that stick harder than Monday blues.
                         </p>
-                        <h3 className="text-gray-200 mt-[50px] px-[50px] font-sans text-center text-[1.8vh] md:text-[2.5vw] font-bold drop-shadow-[0_0_4px_rgba(255,255,255,0.6)]">Get better. Get disciplined. Get it done <br />– only at justtodo.com</h3>
+                        <h3 className="text-gray-200 mt-[50px] px-[50px] font-sans text-center text-[1.8vh] md:text-[3.8vmin] font-bold drop-shadow-[0_0_4px_rgba(255,255,255,0.6)]">Get better. Get disciplined. Get it done – only at justtodo.com</h3>
                     </div>
                 </div>
             </div>
