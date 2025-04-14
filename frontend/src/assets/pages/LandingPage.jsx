@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
-export const LandingPage = () => {
+export default function LandingPage(){
     const page = useRef()
     const nav = useRef()
     const container = useRef()

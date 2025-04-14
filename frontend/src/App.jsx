@@ -1,4 +1,6 @@
-import { LandingPage } from "./assets/pages/LandingPage"
+import React from "react"
+
+const LandingPage = React.lazy(() => import('../src/assets/pages/LandingPage'))
 
 function App() {
   return (
